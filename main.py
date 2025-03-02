@@ -3,7 +3,7 @@ import json
 import customtkinter
 from configparser import ConfigParser
 
-#! YOU NEED YOUR OWN API FROM OPENWEATHERMAP API 2.5
+#! YOU NEED YOUR OWN API FROM OPENWEATHERMAP API 2.5.
 
 #* API
 config_file = "config.ini"
