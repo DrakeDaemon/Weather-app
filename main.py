@@ -3,7 +3,7 @@ import json
 import customtkinter
 from configparser import ConfigParser
 
-#! YOU NEED YOUR OWN API FROM OPENWEATHERMAP API 2.5.
+#! YOU NEED YOUR OWN API FROM OPENWEATHERMAP API 2.5
 
 #* API
 config_file = "config.ini"
@@ -11,14 +11,16 @@ config = ConfigParser()
 config.read(config_file) 
 api = config['gfg']['api']
 
-# TODO: Decent looking GUI
 
+#* GUI
 class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
         
         # BG
         self.title('Python Weather app')
+        self.eval('tk::PlaceWindow . center')
+        self.resizable(width=False, height=False)
         self.geometry('350x180')
         self.grid_columnconfigure((0, 1, 2), weight=5)
         self.grid_rowconfigure((0, 1, 2), weight=5)
@@ -38,7 +40,7 @@ class App(customtkinter.CTk):
         self.entry_code.grid(padx=5, row=4, column=0, sticky='w')
 
         # Buttons
-        self.button = customtkinter.CTkButton(self, text='Узнать погоду', command=self.event, width=150, height=30)
+        self.button = customtkinter.CTkButton(self, text='Узнать погоду', command=self.event, width=200, height=30)
         self.button.grid(padx=5, pady=5, row=5, column=0, sticky='w')
         
     # Functions
