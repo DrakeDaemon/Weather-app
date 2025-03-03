@@ -86,6 +86,7 @@ class App(customtkinter.CTk):
         print("Error: Invalid API data structure")
         return None
 
+
 app = App()
 
 if __name__ == '__main__':
