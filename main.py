@@ -36,7 +36,7 @@ class App(customtkinter.CTk):
         self.entry_city = customtkinter.CTkEntry(self, width=200, height=30, corner_radius=10, placeholder_text='Введите имя вашего города.')
         self.entry_city.grid(padx=5, pady=3, row=3, sticky='w')
 
-        self.entry_code = customtkinter.CTkEntry(self, width=200, height=30, corner_radius=10, placeholder_text='Введите код вашей страны.')
+        self.entry_code = customtkinter.CTkEntry(self, width=200, height=30, corner_radius=10, placeholder_text='Код вашей страны(ISO-3166 формат).')
         self.entry_code.grid(padx=5, row=4, column=0, sticky='w')
 
         # Buttons
